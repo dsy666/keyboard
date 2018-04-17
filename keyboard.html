@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>keyboard</title>
+	<style type="text/css">
+	.sum
+	{
+		width: 1200px;
+		position: absolute;
+		top: 100px;
+		left: 90px;
+	}
+	.key1 
+	{
+		width: 1100px;
+	}
+	.key1 button p
+	{
+		font-size: 10px;
+		color: #ECECEC;
+		line-height: 10px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.key1 button img
+	{
+		line-height: 20px;
+		margin-top: 4px;
+		margin-bottom: -3px;
+	}
+	.key1 button
+	{
+		outline: none;
+		display:inline-block;
+		height: 35px;
+		display: table-cell;
+		vertical-align: middle;
+		width: 55px;
+		background: black;
+		color: #ECECEC;
+		text-align: center;
+		margin-right: 5px;
+		border-radius: 5px;
+		cursor: pointer;
+		box-shadow: 1px 1px 2px #A0A0A0;
+	}
+	.key1 button:active
+	{
+		position: relative;
+		top: 3px;
+	}
+	.key2 
+	{
+		width: 1100px;
+	}
+	.key2 button
+	{
+		outline: none;
+		display: inline-block;
+		height: 65px;
+		width: 65px;
+		display: table-cell;
+		vertical-align: middle;
+		background: black;
+		color: #ECECEC;
+		text-align: center;
+		margin-right: 5px;
+		margin-top: 5px;
+		border-radius: 5px;
+		cursor: pointer;
+		box-shadow: 1px 1px 2px #A0A0A0;
+		position: relative;
+	}
+	.key2 button:active
+	{
+		position: relative;
+		top: 3px;
+	}
+	#h
+	{
+		outline: none;
+		display: inline-block;
+		height: 65px;
+		width: 50px;
+		display: table-cell;
+		vertical-align: middle;
+		background: black;
+		color: #ECECEC;
+		text-align: center;
+		margin-right: 5px;
+		margin-top: 5px;
+		border-radius: 5px;
+		cursor: pointer;
+		box-shadow: 1px 1px 2px #A0A0A0;
+	}
+	#small
+	{
+		font-size: 15px;
+		position: absolute;
+		bottom: 22px;
+	}
+	#big
+	{
+		font-size: 20px;
+	}
+	#space
+	{
+		font-size: 20px;
+		width: 135px;
+	}
+	.key3 
+	{
+		width: 1100px;
+	}
+	.key3 button
+	{
+		outline: none;
+		display: inline-block;
+		font-size: 20px;
+		height: 65px;
+		width: 65px;
+		display: table-cell;
+		vertical-align: middle;
+		background: black;
+		color: #ECECEC;
+		text-align: center;
+		margin-right: 5px;
+		margin-top: 5px;
+		border-radius: 5px;
+		cursor: pointer;
+		box-shadow: 1px 1px 2px #A0A0A0;
+		position: relative;
+	}
+	.key3 button:active
+	{
+		position: relative;
+		top: 3px;
+	}
+	#tab
+	{
+		width: 95px;
+		font-size: 20px;
+	}
+	#slash
+	{
+		width: 89px;
+	}
+	.key4
+	{
+		width: 1100px;
+	}
+	.key4 button
+	{
+		outline: none;
+		display: inline-block;
+		font-size: 20px;
+		height: 65px;
+		width: 65px;
+		display: table-cell;
+		vertical-align: middle;
+		background: black;
+		color: #ECECEC;
+		text-align: center;
+		margin-right: 5px;
+		margin-top: 5px;
+		border-radius: 5px;
+		cursor: pointer;
+		box-shadow: 1px 1px 2px #A0A0A0;
+		position: relative;
+	}
+	.key4 button:active
+	{
+		position: relative;
+		top: 3px;
+	}
+	#caps
+	{
+		width: 120px;
+		font-size: 20px;
+	}
+	#en
+	{
+		width: 140px;
+	}
+	.key5
+	{
+		width: 1100px;
+	}
+	.key5 button
+	{
+		outline: none;
+		display: inline-block;
+		font-size: 20px;
+		height: 65px;
+		width: 65px;
+		display: table-cell;
+		vertical-align: middle;
+		background: black;
+		color: #ECECEC;
+		text-align: center;
+		margin-right: 5px;
+		margin-top: 5px;
+		border-radius: 5px;
+		cursor: pointer;
+		box-shadow: 1px 1px 2px #A0A0A0;
+		position: relative;
+	}
+	.key5 button:active
+	{
+		position: relative;
+		top: 3px;
+	}
+	#shift
+	{
+		width: 167px;
+	}
+	.key6
+	{
+		width: 1100px;
+	}
+	.key6 button
+	{
+		outline: none;
+		display: inline-block;
+		font-size: 20px;
+		height: 80px;
+		width: 65px;
+		display: table-cell;
+		vertical-align: middle;
+		background: black;
+		color: #ECECEC;
+		text-align: center;
+		margin-right: 5px;
+		margin-top: 5px;
+		border-radius: 5px;
+		cursor: pointer;
+		box-shadow: 1px 1px 2px #A0A0A0;
+		position: relative;
+	}
+	.key6 button:active
+	{
+		position: relative;
+		top: 3px;
+	}
+	#block
+	{
+		width: 390px;
+	}
+	#left
+	{
+		height: 35px;
+		width: 52px;
+		margin-top: 55px;
+		margin-right: 0px;
+	}
+	#up
+	{
+		height: 35px;
+		width: 52px;
+		margin-bottom: 45px; 
+	}
+	#down
+	{
+		height: 35px;
+		width: 52px;
+		margin-left: -61px;
+		margin-top: 55px;
+	}
+	#right
+	{
+		height: 35px;
+		width: 52px;
+		margin-left: -5px; 
+		margin-top: 55px;
+	}
+	</style>
+</head>
+<body>
+<div class="sum">
+	<div class="key1">
+			<button >esc</button>
+			<button >f1</button>
+			<button >f2</button>
+			<button >f3</button>
+			<button >f4</button>
+			<button >f5</button>
+			<button >f6</button>
+			<button >f7</button>
+			<button >f8</button>
+			<button >f9</button>
+			<button >f10</button>
+			<button >f11</button>
+			<button >f12</button>
+			<button >
+				<p>pause</br>
+				break</p>
+			</button>
+			<button >
+				<p>prt sc</br>
+				sysrq</p>
+			</button>
+			<button >delete</button>
+			<button ><img src="file://D:/Saved Pictures/closekey.jpg" height="20px" width="25px"></button>
+	</div>
+	<div class="key2">
+		<button id="h"><p id="small">~</p><p id="big">`</p></button>
+		<button><p id="small">!</p><p id="big">1</p></button>
+		<button><p id="small">@</p><p id="big">2</p></button>
+		<button><p id="small">#</p><p id="big">3</p></button>
+		<button><p id="small">$</p><p id="big">4</p></button>
+		<button><p id="small">%</p><p id="big">5</p></button>
+		<button><p id="small">^</p><p id="big">6</p></button>
+		<button><p id="small">&</p><p id="big">7</p></button>
+		<button><p id="small">*</p><p id="big">8</p></button>
+		<button><p id="small">(</p><p id="big">9</p></button>
+		<button><p id="small">)</p><p id="big">0</p></button>
+		<button><p id="small">-</p><p id="big">-</p></button>
+		<button><p id="small">+</p><p id="big">=</p></button>
+		<button id="space">backspace</button>
+	</div>
+	<div class="key3">
+		<button id="tab">tab</button>
+		<button>Q</button>
+		<button>W</button>
+		<button>E</button>
+		<button>R</button>
+		<button>T</button>
+		<button>Y</button>
+		<button>U</button>
+		<button>I</button>
+		<button>O</button>
+		<button>P</button>
+		<button><p id="small">{</p><p id="big">[</p></button>
+		<button><p id="small">}</p><p id="big">]</p></button>
+		<button id="slash"><p id="small">|</p><p id="big">\</p></button>
+	</div>
+	<div class="key4">
+		<button id="caps">caps lock</button>
+		<button>A</button>
+		<button>S</button>
+		<button>D</button>
+		<button>F</button>
+		<button>G</button>
+		<button>H</button>
+		<button>J</button>
+		<button>K</button>
+		<button>L</button>
+		<button><p id="small">:</p><p id="big">;</p></button>
+		<button><p id="small">"</p><p id="big">'</p></button>
+		<button id="en">enter</button>
+	</div>
+	<div class="key5">
+		<button id="shift">shift</button>
+		<button>Z</button>
+		<button>X</button>
+		<button>C</button>
+		<button>V</button>
+		<button>B</button>
+		<button>N</button>
+		<button>M</button>
+		<button><p id="small"><</p><p id="big">,</p></button>
+		<button><p id="small">></p><p id="big">.</p></button>
+		<button><p id="small">?</p><p id="big">/</p></button>
+		<button id="shift">shift</button>
+	</div>
+	<div class="key6">
+		<button>ctrl</button>
+		<button>fn</button>
+		<button><img src="file://D:/Saved Pictures/win.png" height="20px" width="25px"></button>
+		<button>alt</button>
+		<button id="block"></button>
+		<button>alt</button>
+		<button><img src="file://D:/Saved Pictures/mouse.jpg" height="40px" width="40px"></button>
+		<button>ctrl</button>
+		<button id="left"><img src="file://D:/Saved Pictures/arrow_left.png" height="10px" width="20px"></button>
+		<button id="up"><img src="file://D:/Saved Pictures/arrow_up.png" height="15px" width="10px"></button>
+		<button id="down"><img src="file://D:/Saved Pictures/arrow_down.png" height="15px" width="10px"></button>
+		<button id="right"><img src="file://D:/Saved Pictures/arrow_right.png" height="10px" width="20px"></button>
+	</div>
+	</div>
+</div>
+</body>
+</html>
